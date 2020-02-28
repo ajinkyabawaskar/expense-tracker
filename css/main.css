@@ -1,0 +1,101 @@
+:root {
+    --primary: #305368;
+    --secondary: #5ce1e6;
+    --text: #ffffff;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    background: var(--primary);
+    color: var(--text);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0% 0% 0% 10%;
+}
+
+.title {
+    font-size: 2.1rem;
+    margin-bottom: 10%;
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.description {
+    padding-right: 10%;
+    font-size: 1.6rem;
+    margin-bottom: 15%;
+}
+
+.button {
+    width: fit-content;
+    font-size: 0.8rem;
+    background: var(--text);
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 1.76px;
+    border: 0;
+    border-radius: 500px;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 8px 34px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    ;
+}
+
+.button:hover {
+    background: var(--secondary);
+    color: var(--text);
+}
+
+.button:active {
+    background: var(--secondary);
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 2.1rem;
+        margin-bottom: 10%;
+    }
+    .description {
+        padding-right: 10%;
+        font-size: 1.6rem;
+        margin-bottom: 15%;
+    }
+    .button {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .title {
+        font-size: 5rem;
+        margin-bottom: 3%;
+    }
+    .description {
+        padding-right: 10%;
+        font-size: 3rem;
+        margin-bottom: 5%;
+    }
+    .button {
+        font-size: 1.5rem;
+    }
+}
